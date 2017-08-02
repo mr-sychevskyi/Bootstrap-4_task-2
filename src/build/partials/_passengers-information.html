@@ -1,0 +1,111 @@
+<section class="passengers-info">
+	<h3 class="section__title">Passengers information</h3>
+	<div class="section__content">
+		<form class='passengers-info__form'>
+
+			<div class="row">
+
+				<div class="col-md-6">				
+					<div class="form-group">
+						<label class="title-secondary" for="firstname-input">First name</label>
+						<input class="form-control" id="firstname-input" name='first-name' type="text" autocomplete="name">
+					</div>
+				</div>
+				<div class="col-md-6">	
+					<div class="form-group">
+						<label class="title-secondary" for="lastname-input">Last name</label>
+						<input class="form-control" id="lastname-input" name="last-name" type="text">
+					</div>	
+				</div>	
+
+				<div class="col-sm-6">
+					<div class="form-group">
+									
+						<label class="title-secondary" for="date-select">Date of birth</label>
+										
+						<div class="date-wrap">
+							<div class="select-wrapper select-date">
+								<select class="select-date__day">
+									<option value='1'>DD</option>
+									<option value='2'>01</option>
+									<option value='3'>02</option>
+									<option value='4'>03</option>
+								</select>
+							</div>
+							<div class="select-wrapper select-date">
+								<select class="select-date__month">
+									<option value='1'>MM</option>
+									<option value='2'>Januar</option>
+									<option value='3'>Februar</option>
+									<option value='4'>March</option>
+								</select>
+							</div>
+							<div class="select-wrapper select-date">
+								<select class="select-date__year">
+									<option value='1'>YYYY</option>
+									<option value='2'>2017</option>
+									<option value='3'>2016</option>
+									<option value='4'>2015</option>
+								</select>
+							</div>	
+						</div>
+										
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label class="title-secondary" for="nationality-input">Nationality</label>
+						<input class="form-control" id="nationality-input" name="nationality" type="text">
+					</div>
+				</div>	
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="title-secondary" for="email-input">Email address</label>
+						<input class="form-control" id="email-input" name="email" type="email" aria-describedby="emailHelp">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">	
+
+						<label class="title-secondary" for="tel-input">Mobile phone</label>
+										
+						<div class="d-flex align-items-center justify-content-between">
+							<div class="select-wrapper select-wrapper-sm">
+								<select class="tel-select" id='tel-code' type="tel">
+									<option value='1'>+31</option>
+									<option value='2'>+32</option>
+									<option value='3'>+33</option>
+								</select>
+							</div>
+							<input class="form-control" id="tel-input" type="tel">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-11 col-md-6">	
+					<fieldset disabled>
+						<div class="form-group mb-0">
+							<label class="title-secondary" for="disabledSelect">University</label>
+							<div class="select-wrapper" id="disabledSelect">
+								<select id='university' name='university'>
+									<option>TU Delft</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+
+				<button type="button" class="btn btn-tooltip hidden-sm-down" data-toggle="tooltip" data-placement="right" title="Unfortunately, at this point we only offer flight tickets for students at the TU Delft">
+					@@include('./svg/_icon-tooltip.html')
+				</button>
+				<button type="button" class="btn btn-tooltip hidden-md-up" data-toggle="tooltip" data-placement="left" title="Unfortunately, at this point we only offer flight tickets for students at the TU Delft">
+					@@include('./svg/_icon-tooltip.html')
+				</button>
+
+			</div>
+
+		</form>	
+	</div>
+</section>

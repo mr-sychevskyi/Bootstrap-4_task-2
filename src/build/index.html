@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vliegwel</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="dist/bootstrap.css" rel="stylesheet">
+        <link href="dist/main.css" rel="stylesheet">
+    </head>
+
+   
+    <body>
+    
+    
+    	<header class="header py-md-3">
+			<div class="container">
+				<!-- Navbar -->
+				@@include('./partials/_navbar.html')	
+			</div>  
+		</header>   
+	
+
+		<div class="progressbar-section py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul class="progressbar list-unstyled mx-auto">
+							<li class="progressbar__item text-uppercase previous">Search results</li>
+							<li class="progressbar__item text-uppercase previous">Checkout</li>
+							<li class="progressbar__item text-uppercase current">Confirmation</li>
+							<li class="progressbar__item text-uppercase">Payment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> 
+    	
+    	
+    	<div class="main py-4 py-sm-5">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-lg-8">
+						<!-- Flight-details -->
+    					@@include('./partials/_flight-details.html')	
+						
+						<!-- Passengers-info -->
+    					@@include('./partials/_passengers-information.html')	
+						
+						<!-- Baggage -->
+    					@@include('./partials/_baggage.html')	
+    					
+    									
+    					<div class="row">
+							<div class="col-md-8 mb-4">
+								<!-- Vouchercode -->
+		    					@@include('./partials/_vouchercode.html')	
+							</div>
+
+							<div class="col-md-8 d-flex justify-content-md-between justify-content-sm-around btn__group">
+								<a class="btn btn__control btn__primary btn-pd-2" href="#">Purchase</a>
+								<a class="btn btn__control btn__outline-primary" href="#">Edit information</a>
+							</div>	
+						</div>				
+					</div>
+					
+					<div class="col-lg-4 sidebar">
+						<!-- Price-breakdown -->
+    					@@include('./partials/_price-breakdown.html')		
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer py-3 mx-4">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<small class="footer__copyright text-muted">© 2016 Vliegwel. All rights reserved.</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+   
+
+    	<!-- SCRIPTS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.min.js"></script>
+           
+    </body>
+</html>

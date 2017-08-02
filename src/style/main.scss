@@ -1,0 +1,38 @@
+// --------------------------------------------------------
+//  Import in the default bootstrap variables.
+//  Then override bootstrap default with project specific values.
+// --------------------------------------------------------
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/custom";
+
+
+/* --------------------------------------------------------
+   Core mixins
+   -------------------------------------------------------- */
+
+@import '../../node_modules/bootstrap/scss/mixins';
+
+
+/* --------------------------------------------------------
+   Components
+   -------------------------------------------------------- */
+
+@import 
+	'base/common',
+	'base/typography';
+
+@import 
+	'utils/variables';
+	
+@import 
+	'layout/header',
+	'layout/navbar',
+	'layout/progressbar',
+	'layout/main',
+	'layout/footer';
+
+@import 
+	'components/timeline',
+	'components/buttons', 
+	'components/media';

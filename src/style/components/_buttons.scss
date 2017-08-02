@@ -1,0 +1,74 @@
+// BUTTONS__TYPES
+.btn-info {
+	@include button-variant( $white, $v-blue-dark, $white );	
+	@include button-size( .4rem, .75rem, 1rem, 5px );
+	
+	border-width: 2px;
+}
+
+.btn-icon {
+    padding: 10px;
+	transition: all .4s;
+	svg { transition: all .4s; }
+}
+
+.btn__control {
+	@include button-size( 15px, 20px, 1.4rem, 5px );
+	border-width: 2px;
+}
+
+.btn-tooltip {
+	margin-top: 50px;
+	padding: 0;
+		
+	width: 20px;
+	height: 20px;
+		
+	border: none;
+	outline: none;
+	background: none;		
+}
+// END --> BUTTONS__TYPES
+
+
+
+// BUTTONS__STATE
+.btn__primary {
+	@include button-variant( $white, $v-red, transparent );
+	position: relative;
+}
+
+.btn__outline-primary {
+	@include button-variant( $v-red, $white, $v-red );
+}
+
+.btn-pd-2 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+// END --> BUTTONS__STATE
+
+
+
+// BUTTONS__HOVER
+.btn-info:hover { background: $bg-header; }
+
+.btn-icon:hover {
+	color: $v-grey-dark;
+	box-shadow: 0 0 6px 2px $v-grey-light;
+	
+	svg { transform: rotate(180deg); }
+}
+
+.btn__primary:hover {
+	background: darken($v-red,25%);
+	box-shadow: 0 0 5px 2px rgba(50,50,50,0.6);
+}
+
+.btn__outline-primary:hover {
+	color: #fff;
+	background: $v-red;
+	border-color: $v-red;
+	box-shadow: 0 0 5px 2px rgba(50,50,50,0.6);
+}
+// END --> BUTTONS__HOVER

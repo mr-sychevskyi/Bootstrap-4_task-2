@@ -1,0 +1,79 @@
+.navbar {
+	
+	&-header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		
+		.navbar-brand { font-size: 2rem; }
+	}
+	
+	.nav-item { 
+		padding: 0 1rem; 
+	
+		.select-lang {
+			padding: 0.5em .75rem;
+
+			color: $white;
+			background: $bg-header url('../img/icon-arrowDown_sm.png') no-repeat 100% center;
+
+			border: none;
+			outline: none;
+			appearance: none;
+		}
+	}
+}
+
+
+.navbar-toggler {
+	align-self: center; 
+	border: 2px solid $white;
+	transition: all .4s;
+	
+	&:hover { 
+        outline:0;
+		background: darken( $v-blue-dark, 15% );
+	}
+		
+	.icon-bar {
+		position: relative;
+		left: 0;
+
+		display: block;
+		width: 25px;
+		height: 2px;
+
+		margin-top: 4px;
+		margin-bottom: 4px;
+
+		background-color: $white;
+		transition: all 0.2s;
+		opacity: 1;
+	}
+	
+	.icon-bar:nth-child(1),
+	.icon-bar:nth-child(3) { transition: transform .3s ease-in-out; }
+}
+
+
+// ANIMATED__NAVBAR-TOGGLER 
+.navbar-toggler .icon-bar:nth-of-type(1) {
+	transform: translate3d(0,6px,0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+	transform: translate3d(0,-6px,0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+// END --> ANIMATED 

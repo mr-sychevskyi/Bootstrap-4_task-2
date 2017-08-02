@@ -1,0 +1,22 @@
+$v-blue: #079ed4;
+$v-blue-dark: rgba(0, 0, 0, 0.46);
+
+$v-grey: rgba(108, 108, 108, 0.3);
+$v-grey-light: #fafafa;
+$v-grey-light-2: #dee2e9;
+$v-grey-dark: #616161;
+$v-green: #00bfa5;
+$v-red: #ff5a5f;
+$v-cyan-dark: #778397;
+$v-dark: #4d5562;
+
+$bg-header: $v-blue;
+$bg-section: $v-grey-light;
+$border-section: $v-grey-light-2;
+$title-section: $v-cyan-dark;
+$title-secondary: #4d5562;
+
+
+.text-light { color: $white; }
+.text-dark { color: #4d5562; }
+.text-red { color:  #ec2970; }

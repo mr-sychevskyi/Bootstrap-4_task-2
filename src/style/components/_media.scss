@@ -1,0 +1,186 @@
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	
+	.flights-info__wrap {
+		
+		.flights-info__top { margin-bottom: 40px; }
+
+		.flights-info__body {
+			flex-wrap: wrap;
+
+			&__departure {
+				flex-basis: 50%;
+				order: 1;
+			}
+
+			&__route {
+				flex-basis: 100%;
+				order: 0;
+				margin-bottom: 35px;
+
+
+				.route__icons {
+					font-size: .9rem;
+				}
+			}
+		}	
+	}
+	
+	.btn__control:last-child { padding: 15px; }
+	
+	$tooltip-max-width: 240px;
+	.tooltip-inner { max-width: $tooltip-max-width; }
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+	.navbar .nav-item { padding: 0 .5rem; }	
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	.sidebar { margin-top: 45px; }
+}
+
+
+
+@media only screen and (max-width: 767px) {	
+	
+	.navbar-nav {
+		display: flex;
+		
+		.nav-item {
+			&:first-child { order: 4; }
+			.select-lang { padding-left: 0; }
+		}
+	}
+	
+	.flights-info__wrap {
+		border-left: none;
+		border-top: 3px solid $v-grey-light-2;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 576px) {
+	
+	.header {
+		.navbar-header .navbar-brand { font-size: 1.5rem; }
+	}
+	
+	.progressbar__item {
+		font-size: .7rem;
+		
+		&:before {			
+			width: 40px;
+			height: 40px;
+			line-height: 35px;
+		}
+				
+		&:after { top: 20px; }
+	}
+
+	.section__title { text-align: center; }
+	
+	$tooltip-max-width: 220px;
+	.tooltip-inner { max-width: $tooltip-max-width; }
+	
+	.flights-info__wrap {
+		
+		.flights-info__top { margin-bottom: 40px; }
+
+		.flights-info__body {
+			flex-wrap: wrap;
+
+			&__departure {
+				flex-basis: 50%;
+				order: 1;
+			}
+
+			&__route {
+				flex-basis: 100%;
+				order: 0;
+				margin-bottom: 35px;
+
+
+				.route__icons {
+					font-size: .9rem;
+				}
+			}
+		}	
+	}
+
+	
+	.baggage-info {
+		
+		&__default {
+			flex-wrap: wrap;
+			text-align: center;
+			
+			padding: 15px 20px;
+			
+			.baggage-info__type {
+				flex-basis: 100%;
+				margin-bottom: 15px;
+			}
+	
+			.baggage-info__dimensions {
+				margin: 0;
+				flex-basis: 50%;
+			}
+			
+			.baggage-info__cost { flex-basis: 50%; }
+			
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&__additional {
+			flex-wrap: wrap;
+			text-align: center;
+
+			margin: 0;
+			padding: 0;
+			padding-top: 5px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			
+			.baggage-info__type {
+				flex-basis: 100%;
+				margin-top: 10px;
+				order: 2;
+			}
+	
+			.baggage-info__dimensions {
+				margin: 0;
+				flex-basis: 50%;
+				order: 0;
+			}
+			
+			.baggage-info__cost { flex-basis: 50%; }
+		}
+		
+		.btn-icon:hover { box-shadow: 0 -2px 2px #fafafa; }
+	}
+	
+	
+	.btn__group {
+		flex-direction: column;
+		
+		.btn__control {
+			width: 100%;
+			&:first-of-type { margin-bottom: 12px; }
+		}	
+	}
+	
+	.price-breakd__row:last-child { font-size: 1.3rem; }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+	.select-wrapper-sm select{ padding: .75rem 0.25rem; }
+}
