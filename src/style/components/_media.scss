@@ -52,7 +52,10 @@
 		
 		.nav-item {
 			&:first-child { order: 4; }
-			.select-lang { padding-left: 0; }
+			.select-lang { 
+				padding-left: 0;
+				width: 100%;				
+			}
 		}
 	}
 	
@@ -182,5 +185,6 @@
 
 
 @media only screen and (max-width: 375px) {
+	.progressbar__item { font-size: .6rem; }
 	.select-wrapper-sm select{ padding: .75rem 0.25rem; }
 }
