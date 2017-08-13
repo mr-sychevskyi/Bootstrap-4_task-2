@@ -9,7 +9,7 @@
 .btn-icon {
     padding: 10px;
 	transition: all .4s;
-	svg { transition: all .4s; }
+	svg { fill: $v-grey-dark; }
 }
 
 .btn__control {
@@ -56,8 +56,6 @@
 .btn-icon:hover {
 	color: $v-grey-dark;
 	box-shadow: 0 0 6px 2px $v-grey-light;
-	
-	svg { transform: rotate(180deg); }
 }
 
 .btn__primary:hover {

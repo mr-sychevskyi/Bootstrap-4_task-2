@@ -25,6 +25,11 @@
 		}	
 	}
 	
+	.passengers-info {
+		select { padding-left: 0.25rem; }
+		.select-wrapper:after { width: 30px; }
+	}
+				
 	.btn__control:last-child { padding: 15px; }
 	
 	$tooltip-max-width: 240px;
@@ -52,7 +57,10 @@
 		
 		.nav-item {
 			&:first-child { order: 4; }
-			.select-lang { padding-left: 0; }
+			.select-lang { 
+				padding-left: 0;
+				width: 100%;				
+			}
 		}
 	}
 	
@@ -181,6 +189,23 @@
 
 
 
-@media only screen and (max-width: 375px) {
-	.select-wrapper-sm select{ padding: .75rem 0.25rem; }
+@media only screen and (max-width: 420px) {
+	.progressbar__item { font-size: .6rem; }
+	
+	.passengers-info {
+		select {
+			padding-left: 0.25rem;
+			padding-right: 30px;
+			font-size: .9rem;
+			line-height: 1.5;
+		}
+		
+		.select-wrapper-sm select {  padding-left: 0.25rem; }
+		
+		.select-wrapper:after,
+		.select-wrapper-sm:after {
+			width: 28px;
+		}
+	}
+}
 }
