@@ -109,9 +109,10 @@
 		position: relative;
 	
 		width: 100%;
-		padding: .75rem;
+		padding: .9rem .75rem;
 		
 		font-size: 1.1rem;
+		line-height: 1.25;
 		
 		background-color: transparent;
 		border: 2px solid #e0e0e0;
@@ -138,8 +139,8 @@
 		right: 0;
 		
 		display: inline-block;
-		width: 40px;
-		height: 100%;
+		width: 35px;
+		height: 98%;
 				
 		border-left: 2px solid #e0e0e0;
 		border-right: 2px solid transparent;
@@ -149,14 +150,12 @@
 	}
 	
 	
-	.date-wrap {
+	.date-select__wrap {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		
-		.select-date {
-			width: 33%;
-		}
+		.select-wrapper { width: 33%; }
 	}
 }
 //  END --> PASSENGERS INFORMATION
