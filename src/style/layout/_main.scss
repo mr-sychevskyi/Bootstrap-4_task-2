@@ -31,8 +31,7 @@
 // FLIGHT__DETAILS
 .flights-info__wrap {
 	padding: 25px 25px;
-	border-left: 3px solid $border-section;
-	
+		
 	.flights-info__top {
 		margin-bottom: 50px;
 		height: 35px;
@@ -78,6 +77,8 @@
 			}
 		}
 	}	
+	
+	&-separator { border-left: 2px solid $border-section; }
 }
 // END --> FLIGHT__DETAILS
 
