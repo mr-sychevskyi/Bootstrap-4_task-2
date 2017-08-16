@@ -104,11 +104,13 @@
 			width: 100vw;
 			height: 2px;
 
-			background-color: $v-green;
+			background-color: ;
 			z-index: -1;
+			pointer-events: none;
 		}
 		
 		&:last-child:after { content: none; }	
+		&:hover { background-color: $v-green; }
 	}
 	
 	&__item-sm { 
