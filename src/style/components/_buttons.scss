@@ -53,10 +53,12 @@
 // BUTTONS__HOVER
 .btn-info:hover { background: $bg-header; }
 
-.btn-icon:hover {
-	color: $v-grey-dark;
+.btn-icon:hover,
+.btn-icon:focus {
+	color: $v-grey-dark;	
 	box-shadow: 0 0 6px 2px $v-grey-light;
 }
+.btn-icon:active { transform: scale(0.95); }
 
 .btn__primary:hover {
 	background: darken($v-red,25%);

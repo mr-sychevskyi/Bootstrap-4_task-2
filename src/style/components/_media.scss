@@ -64,11 +64,10 @@
 		}
 	}
 	
-	.flights-info__wrap {
+	.flights-info__wrap-separator {
 		border-left: none;
-		border-top: 3px solid $v-grey-light-2;
+		border-top: 2px solid $border-section;
 	}
-	
 }
 
 
@@ -171,7 +170,8 @@
 			.baggage-info__cost { flex-basis: 50%; }
 		}
 		
-		.btn-icon:hover { box-shadow: 0 -2px 2px #fafafa; }
+		.btn-icon:hover,
+		.btn-icon:focus { box-shadow: 0 -2px 2px #fafafa; }
 	}
 	
 	
@@ -207,5 +207,4 @@
 			width: 28px;
 		}
 	}
-}
 }
