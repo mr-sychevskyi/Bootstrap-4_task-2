@@ -64,11 +64,10 @@
 		}
 	}
 	
-	.flights-info__wrap {
+	.flights-info__wrap-separator {
 		border-left: none;
-		border-top: 3px solid $v-grey-light-2;
+		border-top: 2px solid $border-section;
 	}
-	
 }
 
 
@@ -207,5 +206,4 @@
 			width: 28px;
 		}
 	}
-}
 }
